@@ -83,22 +83,15 @@
 <!-- Set the side bar and logo specification -->
     <div class="demo-drawer mdl-layout__drawer mdl-color--grey-50 mdl-color-text--blue-grey-100">
     <header class="demo-drawer-header">
-      <img src="images/thunt.jpg" class="demo-avatar" width="240" height="240">
-      <div class="demo-avatar-dropdown">
-      <span></span>
-      <div class="mdl-layout-spacer"></div>
-      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
-      <li class="mdl-menu__item">User functions</li>
-      </ul>
-      </div>
+      <img src="images/thunt.jpg" class="demo-avatar" alt="logogo" width="240" height="240">
     </header>
 <!-- Set the side bar contents -->
     <nav class="demo-navigation mdl-navigation mdl-color--grey-50">
-      <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
-      <a class="mdl-navigation__link" href="" onclick='userTrack();return false;'><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">my_location</i>Location Tracker  (Mobile only)</a>
-      <a class="mdl-navigation__link" id="show" href="" onclick='questGet();return false;'><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">place</i>Question Finder</a>
-      <a class="mdl-navigation__link" id="startUpload" href="" onclick='questSubmit();return false;'><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">beenhere</i>Submit Question</a>
-      <a class="mdl-navigation__link" id="clear" href="" onclick='resetForm();return false;'><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>Clear Question</a>
+      <a class="mdl-navigation__link mdl-color-text--blue-grey-400" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
+      <a class="mdl-navigation__link mdl-color-text--blue-grey-400" href="" onclick='userTrack();return false;'><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">my_location</i>Location Tracker  (Mobile only)</a>
+      <a class="mdl-navigation__link mdl-color-text--blue-grey-400" id="show" href="" onclick='questGet();return false;'><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">place</i>Question Finder</a>
+      <a class="mdl-navigation__link mdl-color-text--blue-grey-400" id="startUpload" href="" onclick='questSubmit();return false;'><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">beenhere</i>Submit Question</a>
+      <a class="mdl-navigation__link mdl-color-text--blue-grey-400" id="clear" href="" onclick='resetForm();return false;'><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>Clear Question</a>
       <div class="mdl-layout-spacer"></div>
     </nav>
   </div>
@@ -111,6 +104,7 @@
   <div style="width: 15px; height: 600px; float: left;">  </div>
 
 <!-- Create the labels and answer boxes for the question and answers -->
+  <div>
        <label for="locationdesc"><b>Location Description:</b></label><br><input type="text" size="32" id="locationdesc" /><br/>
        <label for="question"><b>Question: </b></label><br><input type="text" size="32" id="question" /><br/>
        <label for="answera"><b>A:</b></label><br><input type="text" size="32" id="answera" /><br/>
